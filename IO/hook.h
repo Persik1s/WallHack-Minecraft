@@ -13,7 +13,7 @@
 typedef int(__stdcall* GL_s) (HDC hDc);
 #ifndef Hook
 
-DWORD *AdressSwapBuffer = (DWORD*)GetProcAddress(GetModuleHandleA("opengl32.dll"),"wglSwapBuffers");
+DWORD *AddresSwapBuffer = (DWORD*)GetProcAddress(GetModuleHandleA("opengl32.dll"),"wglSwapBuffers");
 GL_s wglS = nullptr;
 
 void wglSwapBuffers();
