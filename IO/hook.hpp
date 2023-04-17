@@ -16,8 +16,8 @@ namespace HOOK {
 	void Hook() {
 		MH_Initialize();
 
-		MH_CreateHook(AdressSwapBuffer, &GL::wglSwapBuffers,(LPVOID*)&wglS);
-		MH_EnableHook(AdressSwapBuffer);
+		MH_CreateHook(AddresSwapBuffer, &GL::wglSwapBuffers,(LPVOID*)&wglS);
+		MH_EnableHook(AddresSwapBuffer);
 	}
 
 	void UnHook(LPVOID name) {
