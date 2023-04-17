@@ -9,7 +9,7 @@ bool LoadMain(HMODULE module ) {
 	AllocConsole();
 	freopen("CONOUT$", "w", stdout);
 
-	printf("SwapBuffer addres: 0x%x\n", AdressSwapBuffer);
+	printf("SwapBuffer addres: 0x%x\n", AddresSwapBuffer);
 
 	HOOK::Hook();
 	while (!GetAsyncKeyState(VK_INSERT) & 1);
