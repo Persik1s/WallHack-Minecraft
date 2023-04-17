@@ -23,6 +23,6 @@ namespace HOOK {
 	void UnHook(LPVOID name) {
 		MH_RemoveHook(name);
 
-		MessageBoxA(0, "SUSSEFUL", "UNHOOK", MB_OK);
+		MessageBoxA(0, "SUSSESSFUL", "UNHOOK", MB_OK);
 	}
 }
